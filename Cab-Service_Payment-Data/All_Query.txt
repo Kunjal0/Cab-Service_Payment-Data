@@ -1,0 +1,4 @@
+SELECT SUM(Amount) FROM transaction WHERE TransactionMode = 'Credit card' AND Tdate BETWEEN '2021-03-07'AND '2021-03-10';
+SELECT DriverId, SUM(PayableAmountToDriver) FROM transaction WHERE DriverId = '1' AND Tdate BETWEEN '2021-03-09' AND '2021-03-15';
+SELECT SUM(Amount) FROM transaction WHERE Tdate BETWEEN '2021-03-13' AND '2021-03-20';
+SELECT DriverId, SUM(PayableAmountToDriver) FROM transaction WHERE DriverId = '11' AND Tdate BETWEEN '2021-03-16' AND '2021-03-22';
